@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+header {
+  margin: 2rem;
+}
+nav {
+  display: none;
+}
+
+.container {
+  flex-direction: column;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Complex media query targeting tablets and smaller devices with:
+   - max width of 1024px (typical tablet landscape)
+   - or max width 768px (typical tablet portrait and phones)
+   - and prefers reduced motion
+   - and supports hover (e.g. stylus or mouse)
+   - or is in portrait orientation
+*/
+
+/* @media (max-width: 1024px) and (hover: hover) and (prefers-reduced-motion: reduce),
+  (max-width: 768px) and (orientation: portrait),
+  (max-width: 600px) and (pointer: coarse) {
+  header {
+    margin: 2rem;
+  }
+  nav {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  img.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+} */

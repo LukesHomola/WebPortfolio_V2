@@ -1,0 +1,8 @@
+.center {
+  display: flex;
+  margin: 0 auto;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}

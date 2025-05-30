@@ -1,0 +1,193 @@
+/* Import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* CSS Variables for typography */
+:root {
+  /* Font Families */
+  --font-chivo: "Chivo", sans-serif;
+  --font-meri: "Merriweather", serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Font sizes */
+  --fs-h1: 2.5rem; /* 40px */
+  --fs-h2: 2rem; /* 32px */
+  --fs-h3: 1.75rem; /* 28px */
+  --fs-h4: 1.5rem; /* 24px */
+  --fs-h5: 1.25rem; /* 20px */
+  --fs-h6: 1rem; /* 16px */
+
+  --fs-p: 1rem;
+
+  --fs-body: 1.125rem; /* 18px */
+  --fs-small: 0.875rem; /* 14px */
+  --fs-caption: 0.75rem; /* 12px */
+  --fs-extra-small: 0.6rem;
+
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.6;
+
+  /* Letter spacing */
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+
+  /* Colors */
+  --color-heading: #111111;
+  --color-body: #333333;
+  --color-link: #0077cc;
+  --color-link-hover: #005fa3;
+}
+
+/* Reset common elements */
+body {
+  font-family: var(--font-meri);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  letter-spacing: var(--ls-normal);
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings: Chivo Bold with tight line height and letter spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-chivo);
+  font-weight: var(--fw-bold);
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  letter-spacing: var(--ls-tight);
+  line-height: var(--lh-tight);
+}
+p {
+  font-size: var(--fs-p);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+h4 {
+  font-size: var(--fs-h4);
+}
+h5 {
+  font-size: var(--fs-h5);
+}
+h6 {
+  font-size: var(--fs-h6);
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* Strong and Bold text */
+strong,
+b {
+  font-weight: var(--fw-bold);
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  font-weight: var(--fw-regular);
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* Lists */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 1.25em;
+}
+
+/* Buttons and uppercase labels (Chivo Bold uppercase) */
+button,
+.button,
+.btn,
+.small-uppercase {
+  font-family: var(--font-chivo);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h6);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1em;
+  transition: color 0.3s ease;
+}
+
+button:hover,
+.button:hover,
+.btn:hover,
+.small-uppercase:hover {
+  transform: scale(1.05);
+}
+
+/* Small text */
+small {
+  font-size: var(--fs-small);
+}
+
+/* Captions or fine print */
+.caption {
+  font-size: var(--fs-caption);
+  font-style: italic;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* Blockquotes with serif italics */
+blockquote {
+  font-family: var(--font-meri);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+/* Code */
+code,
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 600px) {
+  :root {
+    --fs-h1: 2rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-h5: 1.125rem;
+    --fs-h6: 1rem;
+    --fs-body: 1rem;
+  }
+}

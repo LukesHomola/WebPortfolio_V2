@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homola</title>
+    <link rel="stylesheet" href="/src/CSS/normalize.css" />
+    <link rel="stylesheet" href="/src/CSS/typografy.css" />
+    <link rel="stylesheet" href="/src/CSS/colors.css" />
+    <link rel="stylesheet" href="/src/CSS/header.css" />
+    <link rel="stylesheet" href="/src/CSS/classes.css" />
+    <link rel="stylesheet" href="/src/CSS/index.css" />
+    <script
+      src="https://kit.fontawesome.com/061d94ba71.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="body_index">
+    <header>
+      <nav>
+        <li><a href="/" data-i18n="home">Domů</a></li>
+        <li><a href="/about" data-i18n="about_me">O mně</a></li>
+        <li><a href="/contact" data-i18n="my_projects">Mé projekty</a></li>
+        <li><a href="/contact" data-i18n="contact">Kontakt</a></li>
+        <li><a href="/contact" data-i18n="downloads">Ke stažení</a></li>
+      </nav>
+    </header>
+    <div class="about_me_container">
+      <section class="about_me_section_container">
+        <div class="about_me_section_txt">
+          <h1>LUKÁŠ HOMOLA</h1>
+          <p>
+            Jsem juniorní vývojář se zaměřením na React. Vývoj webových aplikací
+            je mou vášní a věnuji se mu ve volném čase. Pracuji s Reactem,
+            TypeScriptem a Node.js a neustále rozšiřuji své dovednosti.
+          </p>
+        </div>
+        <div class="about_me_section_icons">
+          <img
+            src="./src/assets/avatar/small.png"
+            alt="small_portrait_img"
+            class="small_portrait_img"
+          />
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <span id="my_number_btn"> +420 770 175 790</span>
+        </div>
+      </section>
+
+      <div class="avatar_section_container">
+        <div class="about_me_action_container">
+          <span style="font-size: var(--fs-h1)"
+            ><i class="fa-solid fa-circle-info"></i>
+          </span>
+          <section>
+            <h5 style="font-weight: 600 !important">RYCHLÁ AKCE</h5>
+            <p>Důležité informace k dispozici, na jednom místě.</p>
+          </section>
+
+          <section>
+            <div class="about_me_action_btns_container">
+              <button
+                class="about_me_action_btns techstack_btn"
+                data-i18n="tech_stack_btn"
+              >
+                TECH STACK
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <button
+                class="about_me_action_btns projects_btn"
+                data-i18n="projects_btn"
+              >
+                PROJEKTY <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <br />
+              <button
+                class="about_me_action_btns contact_btn"
+                data-i18n="contact_btn"
+              >
+                <i class="fa-solid fa-message"></i>
+                NAPSAT ZPRÁVU
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="avatar_img_wrapper">
+          <img
+            src="/src/assets/avatar/placeholder_avatar_transparent.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="my_projects">
+      <div class="my_projects_inner_container"></div>
+      <section class="my_projects_title">
+        <p class="my_projects_title_tag">Nedávné</p>
+        <h3 style="line-height: 0.5rem; padding-bottom: 1rem">PROJEKTY</h3>
+        <div class="my_projects_card_container">
+          <div class="my_projects_card">
+            <section class="my_projects_card_title_container">
+              <section class="my_projects_card_title_text_container">
+                <section style="display: flex; align-items: center">
+                  <i class="fa-solid fa-ticket"></i>
+                  <h4>TICKET SYSTÉM</h4>
+                </section>
+
+                <section>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-github my_projects_title_text_github_btn"
+                      style="color: rgb(61, 58, 58)"
+                    ></i
+                  ></a>
+                </section>
+              </section>
+              <section class="my_projects_card_subtitle_container">
+                <p>Ticketovací systém pro naši rodinnou prádelnu.</p>
+              </section>
+            </section>
+
+            <section class="my_projects_card_skill_tag_container">
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                FRONT-END
+              </p>
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                BACK-END
+              </p>
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--accent-800)"
+              >
+                ANDROID
+              </p>
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--accent-800)"
+              >
+                DESKTOP-PROXY
+              </p>
+              <p class="my_projects_card_skill_tag">REACT</p>
+              <p class="my_projects_card_skill_tag">CAPACITOR</p>
+              <p class="my_projects_card_skill_tag">NODE.JS</p>
+              <p class="my_projects_card_skill_tag">MYSQL</p>
+            </section>
+
+            <section class="my_projects_card_text_content_container">
+              <p>
+                Ticketovací systém pro prádelnu, navržený primárně pro použití
+                na tabletu.
+              </p>
+              <p>
+                Zakázky se spravují digitálně přes CRUD rozhraní, administrace
+                běží v prohlížeči přes reverse proxy.
+              </p>
+              <p>
+                Řešení nahrazuje papírové lístky, využívá React, Node.js a
+                MySQL.
+              </p>
+            </section>
+
+            <section
+              class="my_projects_card_img_content_container swiper mySwiper"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_1.png"
+                    alt="ticket_1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_2.png"
+                    alt="ticket_2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_3.png"
+                    alt="ticket_3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_4.png"
+                    alt="ticket_4"
+                  />
+                </div>
+              </div>
+
+              <!-- pagination dots (optional) -->
+              <div class="swiper-pagination"></div>
+            </section>
+          </div>
+          <div class="my_projects_card">
+            <section class="my_projects_card_title_container">
+              <section class="my_projects_card_title_text_container">
+                <section style="display: flex; align-items: center">
+                  <i class="fa-solid fa-ticket"></i>
+                  <h4>TICKET SYSTÉM</h4>
+                </section>
+                <section>
+                  <a
+                    href="https://github.com/LukesHomola/WynnPedia"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-github my_projects_title_text_github_btn"
+                    ></i
+                  ></a>
+                </section>
+              </section>
+              <section class="my_projects_card_subtitle_container">
+                <p>
+                  Komunitní desktopová aplikace pro Minecraft MMO server
+                  Wynncraft.com.
+                </p>
+              </section>
+            </section>
+
+            <section class="my_projects_card_skill_tag_container">
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                FRONT-END
+              </p>
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--accent-800)"
+              >
+                DESKTOP
+              </p>
+              <p
+                class="my_projects_card_skill_tag"
+                style="background-color: var(--accent-800)"
+              >
+                KOMUNITNÍ
+              </p>
+              <p class="my_projects_card_skill_tag">REACT</p>
+              <p class="my_projects_card_skill_tag">ELECTRON</p>
+            </section>
+
+            <section class="my_projects_card_text_content_container">
+              <p>
+                Desktopová aplikace pro hráče Wynncraftu, vytvořená jako osobní
+                průvodce hrou.
+              </p>
+              <p>
+                Zobrazuje statistiky hráčů a guild, aktivitu, leaderboardy,
+                položky a další užitečné nástroje.
+              </p>
+              <p>
+                Postaveno v Electronu s důrazem na přehlednost, rychlost a
+                multitasking bez nutnosti instalace.
+              </p>
+            </section>
+
+            <section
+              class="my_projects_card_img_content_container swiper mySwiper"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_1.png"
+                    alt="ticket_1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_2.png"
+                    alt="ticket_2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_3.png"
+                    alt="ticket_3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./src/assets/projects/ticket_system/ticket_system_4.png"
+                    alt="ticket_4"
+                  />
+                </div>
+              </div>
+
+              <!-- pagination dots (optional) -->
+              <div class="swiper-pagination"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <br />
+
+    <div class="my_experience">
+      <div class="my_experience_inner_container"></div>
+      <section class="my_experience_title">
+        <p class="my_experience_title_tag">Pracovní</p>
+        <h3 style="line-height: 0.5rem; padding-bottom: 1rem">ZKUŠENOSTI</h3>
+        <div class="my_experience_card_container">
+          <div class="my_experience_card">
+            <section class="my_experience_card_title_container">
+              <section class="my_experience_card_title_text_container">
+                <i class="fa-solid fa-building"></i>
+                <h4>ANOVIS CZ s.r.o</h4>
+              </section>
+
+              <section class="my_experience_card_subtitle_container">
+                <p>Červen 2023</p>
+                <p>-</p>
+                <p>Březen 2025</p>
+              </section>
+            </section>
+
+            <section class="my_experience_card_skill_tag_container">
+              <p
+                class="my_experience_card_skill_tag"
+                style="background-color: var(--accent-800)"
+              >
+                HPP
+              </p>
+              <p class="my_experience_card_skill_tag">KOMUNIKACE</p>
+              <p class="my_experience_card_skill_tag">NETWORKING</p>
+            </section>
+            <section class="my_experience_card_text_content_container">
+              <p>
+                Působil jsem jako network support, service desk a remote
+                engineer.
+              </p>
+              <p>
+                Optimalizoval jsem infrastrukturu pomocí údržby, aktualizací a
+                řešení incidentů.
+              </p>
+              <p>
+                Pro vzdálený přístup jsem používal nástroje jako RDP a
+                koordinoval eskalace.
+              </p>
+            </section>
+          </div>
+          <div class="my_experience_card">
+            <section class="my_experience_card_title_container">
+              <section class="my_experience_card_title_text_container">
+                <i class="fa-solid fa-building"></i>
+                <h4>Albert</h4>
+              </section>
+
+              <section class="my_experience_card_subtitle_container">
+                <p>Říjen 2022</p>
+                <p>-</p>
+                <p>Červen 2023</p>
+              </section>
+            </section>
+
+            <section class="my_experience_card_skill_tag_container">
+              <p
+                class="my_experience_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                DPP
+              </p>
+              <p class="my_experience_card_skill_tag">KOMUNIKACE</p>
+            </section>
+            <section class="my_experience_card_text_content_container">
+              <p>
+                Pracoval jsem na úsecích lahůdek, masny a ovoce-zeleniny v
+                Albertu.
+              </p>
+              <p>
+                Staral jsem se o doplňování zboží, kontrolu čerstvosti a obsluhu
+                zákazníků.
+              </p>
+              <p>
+                Dodržoval jsem hygienické normy a rozvíjel týmovou spolupráci.
+              </p>
+            </section>
+          </div>
+          <div class="my_experience_card">
+            <section class="my_experience_card_title_container">
+              <section class="my_experience_card_title_text_container">
+                <i class="fa-solid fa-building"></i>
+                <h4>KFC</h4>
+              </section>
+
+              <section class="my_experience_card_subtitle_container">
+                <p>Červen 2019</p>
+                <p>-</p>
+                <p>Říjen 2022</p>
+              </section>
+            </section>
+
+            <section class="my_experience_card_skill_tag_container">
+              <p
+                class="my_experience_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                DPP
+              </p>
+              <p class="my_experience_card_skill_tag">KOMUNIKACE</p>
+            </section>
+            <section class="my_experience_card_text_content_container">
+              <p>
+                Obsluhoval jsem zákazníky a připravoval objednávky v rychlém
+                provozu.
+              </p>
+              <p>
+                Pracoval jsem s interním systémem pro zadávání a správu
+                objednávek.
+              </p>
+              <p>
+                Naučil jsem se zvládat stres, dodržovat postupy a efektivně
+                spolupracovat.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <br />
+
+    <div class="my_studies">
+      <div class="my_studies_inner_container"></div>
+      <section class="my_studies_title">
+        <p class="my_studies_title_tag">Mé</p>
+        <h3 style="line-height: 0.5rem; padding-bottom: 1rem">VZDĚLÁNÍ</h3>
+        <div class="my_studies_card_container">
+          <div class="my_studies_card">
+            <section class="my_studies_card_title_container">
+              <section class="my_studies_card_title_text_container">
+                <i class="fa-solid fa-book"></i>
+                <h4>SŠEE SOKOLNICE</h4>
+              </section>
+
+              <section class="my_studies_card_subtitle_container">
+                <p>Září 2019</p>
+                <p>-</p>
+                <p>Květen 2023</p>
+              </section>
+            </section>
+
+            <section class="my_studies_card_skill_tag_container">
+              <p
+                class="my_studies_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                MATURITA
+              </p>
+              <p class="my_studies_card_skill_tag">IT</p>
+              <p class="my_studies_card_skill_tag">ELEKTRO</p>
+              <p class="my_studies_card_skill_tag">PROGRAMOVÁNÍ</p>
+              <p class="my_studies_card_skill_tag">NETWORKING</p>
+            </section>
+            <section class="my_studies_card_text_content_container">
+              <p>
+                Vystudoval jsem střední školu zaměřenou na elektroniku a IT.
+              </p>
+              <p>Specializoval jsem se na programování a počítačové sítě.</p>
+              <p>Získané znalosti jsem si prohloubil maturitou v oboru.</p>
+            </section>
+          </div>
+          <div class="my_studies_card">
+            <section class="my_studies_card_title_container">
+              <section class="my_studies_card_title_text_container">
+                <i class="fa-solid fa-book"></i>
+                <h4>ERASMUS SRBSKO</h4>
+              </section>
+
+              <section class="my_studies_card_subtitle_container">
+                <p>Květen 2022</p>
+                <p>-</p>
+                <p>Červen 2022</p>
+              </section>
+            </section>
+
+            <section class="my_studies_card_skill_tag_container">
+              <p
+                class="my_studies_card_skill_tag"
+                style="background-color: var(--secondary-800)"
+              >
+                STÁŽ
+              </p>
+              <p class="my_studies_card_skill_tag">ELEKTRO</p>
+              <p class="my_studies_card_skill_tag">PROGRAMOVÁNÍ</p>
+              <p class="my_studies_card_skill_tag">NETWORKING</p>
+            </section>
+            <section class="my_studies_card_text_content_container">
+              <p>
+                V květnu a červnu 2022 jsem absolvoval stáž v Srbsku v rámci
+                programu Erasmus.
+              </p>
+              <p>
+                Rozvíjel jsem dovednosti v programování, počítačových sítích a
+                elektrotechnice.
+              </p>
+              <p>
+                Získal jsem praktické zkušenosti a prohloubil své technické
+                znalosti v reálném prostředí.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

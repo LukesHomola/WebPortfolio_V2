@@ -1,0 +1,77 @@
+:root {
+  /* Text (light gray) - 900 is very light, 100 is near black */
+  --text-900: #eceded;
+  --text-800: #d9dbdb;
+  --text-700: #c4c7c7;
+  --text-600: #afb3b3;
+  --text-500: #9aa09f;
+  --text-400: #858c8b;
+  --text-300: #6f7877;
+  --text-200: #5a6463;
+  --text-100: #454f4e;
+  --text-black: #1a1a1a;
+
+  /* Background (dark gray) - 900 is darkest */
+  --bg-900: #0e0e0e; /* near black */
+  --bg-800: #141414;
+  --bg-700: #181818;
+  --bg-600: #202020;
+  --bg-500: #262626;
+  --bg-400: #2c2c2c;
+  --bg-300: #323232;
+  --bg-200: #383838;
+  --bg-100: #3e3e3e; /* still very dark but usable for contrast */
+
+  /* Primary (light red) */
+  --primary-100: #fceaea; /* darker very light */
+  --primary-200: #f4b6b6; /* darker light */
+  --primary-300: #ec8a8a; /* darker medium light */
+  --primary-400: #e35c5c; /* darker medium */
+  --primary-500: #d83232; /* darker base */
+  --primary-600: #b12429; /* darker strong */
+  --primary-700: #8f1c22; /* darker deeper */
+  --primary-800: #6f151c; /* darker dark */
+  --primary-900: #520f14; /* darker very dark */
+
+  --primary-900-o7: rgba(201, 42, 42, 0.7);
+  --primary-900-o5: rgba(201, 42, 42, 0.5);
+  --primary-700-o5: rgba(250, 92, 92, 0.5);
+
+  /* Secondary (crimson red) */
+  --secondary-100: #fff0f0; /* was #fff5f5, darker */
+  --secondary-200: #ffd0d0; /* was #ffe3e3, darker */
+  --secondary-300: #ffb0b0; /* was #ffc9c9, darker */
+  --secondary-400: #ff8b8b; /* was #ffa8a8, darker */
+  --secondary-500: #ff6a6a; /* was #ff8787, darker */
+  --secondary-600: #e04646; /* was #fa5c5c, darker */
+  --secondary-700: #bf3636; /* was #f03e3e, darker */
+  --secondary-800: #9f2e2e; /* was #d63333, darker */
+  --secondary-900: #872727; /* was #c92a2a, darker */
+
+  --secondary-900-o7: rgba(138, 28, 39, 0.7);
+  --secondary-900-o5: rgba(138, 28, 39, 0.5);
+  --secondary-700-o5: rgba(230, 57, 70, 0.5);
+
+  /* semi-transparent secondary color for bubbles */
+
+  /* Accent (bright blue) */
+  --accent-100: #f0f7ff;
+  --accent-200: #d6ebff;
+  --accent-300: #add8ff;
+  --accent-400: #85c4ff;
+  --accent-500: #5cb0ff;
+  --accent-600: #339cff;
+  --accent-700: #1a8cff;
+  --accent-800: #0f6cd1;
+  --accent-900: #0a4ba0;
+
+  --accent2-100: #dce6f5;
+  --accent2-200: #b4c7e6;
+  --accent2-300: #8ba8d7;
+  --accent2-400: #6289c8;
+  --accent2-500: #426fb4;
+  --accent2-600: #345c94;
+  --accent2-700: #2a4a78;
+  --accent2-800: #21385d;
+  --accent2-900: #192944;
+}
