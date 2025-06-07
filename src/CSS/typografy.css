@@ -107,7 +107,6 @@ b {
 
 /* Links */
 a {
-  text-decoration: underline;
   font-weight: var(--fw-regular);
   transition: color 0.3s ease;
 }
@@ -190,5 +189,15 @@ pre {
     --fs-h5: 1.125rem;
     --fs-h6: 1rem;
     --fs-body: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --fs-h2: 2.25rem; /* up from 2rem */
+    --fs-h3: 2rem; /* up from 1.75rem */
+    --fs-h4: 1.75rem; /* up from 1.5rem */
+    --fs-h5: 1.5rem; /* up from 1.25rem */
+    --fs-h6: 1.25rem; /* up from 1rem */
+    --fs-large: 3.2rem; /* Slight boost */
   }
 }

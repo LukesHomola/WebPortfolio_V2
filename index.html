@@ -29,19 +29,30 @@
         <details>
           <summary></summary>
           <div class="header_content_container">
-            <br />
-            <section class="header_title">
-              <h1>HOMOLA</h1>
-              <p>React dev</p>
-            </section>
+            <div>
+              <div class="header_language_switcher_mobile">
+                <p>Změna jazyka</p>
+                <img src="./src/assets/language/czech_icon.svg" alt="" />
+              </div>
+              <br />
+              <section class="header_title">
+                <h1>HOMOLA</h1>
+                <p>React dev</p>
+              </section>
+            </div>
+
             <section class="header_btns">
-              <li><a href="/" data-i18n="home">DOMŮ</a></li>
-              <li><a href="/about" data-i18n="about_me">O MNĚ</a></li>
+              <li><a href="/" data-i18n="about_me">O MNĚ</a></li>
               <li>
-                <a href="/projects" data-i18n="my_projects">Mé PROJEKTY</a>
+                <a href="#projects_id" data-i18n="my_projects">PROJEKTY</a>
               </li>
-              <li><a href="/contact" data-i18n="contact">KONTAKT</a></li>
-              <li><a href="/downloads" data-i18n="downloads">KE STAŽENÍ</a></li>
+              <li>
+                <a href="#techstack_id" data-i18n="my_techstack">TECH STACK</a>
+              </li>
+              <li><a href="#contact_id" data-i18n="contact">KONTAKT</a></li>
+              <li>
+                <a href="#downloads_id" data-i18n="downloads">KE STAŽENÍ</a>
+              </li>
             </section>
             <section class="header_btns_bottom">
               <li>+420 770 175 790</li>
@@ -49,15 +60,22 @@
             </section>
           </div>
         </details>
+
         <section class="header_content_desktop">
           <section class="header_btns">
-            <li><a href="/" data-i18n="home">DOMŮ</a></li>
-            <li><a href="/about" data-i18n="about_me">O MNĚ</a></li>
-            <li>
-              <a href="/projects" data-i18n="my_projects">Mé PROJEKTY</a>
-            </li>
-            <li><a href="/contact" data-i18n="contact">KONTAKT</a></li>
-            <li><a href="/downloads" data-i18n="downloads">KE STAŽENÍ</a></li>
+            <a href="/" data-i18n="about_me">O MNĚ</a>
+            <a href="#projects_id" data-i18n="my_projects">PROJEKTY</a>
+            <a href="#techstack_id" data-i18n="my_techstack">TECH STACK</a>
+            <a href="#contact_id" data-i18n="contact">KONTAKT</a>
+            <a href="#downloads_id" data-i18n="downloads">KE STAŽENÍ</a>
+            <br />
+            <div class="header_language_switcher_desktop">
+              <a href="#"
+                ><img
+                  src="./src/assets/language/czech_icon.svg"
+                  alt="czech_language_icon"
+              /></a>
+            </div>
           </section>
         </section>
       </nav>
@@ -66,6 +84,19 @@
       <section class="about_me_section_container">
         <div class="about_me_section_txt">
           <h1>LUKÁŠ HOMOLA</h1>
+          <p>
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >REACT</span
+            >
+            ·
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >TYPESCRIPT</span
+            >
+            ·
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >NODE</span
+            >
+          </p>
           <p>
             Jsem juniorní vývojář se zaměřením na React. Vývoj webových aplikací
             je mou vášní a věnuji se mu ve volném čase. Pracuji s Reactem,
@@ -99,33 +130,36 @@
             ><i class="fa-solid fa-circle-info"></i>
           </span>
           <section>
-            <h5 style="font-weight: 600 !important">RYCHLÁ AKCE</h5>
+            <h3 style="font-weight: 600 !important">RYCHLÁ AKCE</h3>
             <p>Důležité informace k dispozici, na jednom místě.</p>
           </section>
 
           <section class="about_me_action_btns_outer_container">
             <div class="about_me_action_btns_container">
-              <button
+              <a
                 class="about_me_action_btns techstack_btn"
                 data-i18n="tech_stack_btn"
+                href="#techstack_id"
               >
                 TECH STACK
                 <i class="fa-solid fa-chevron-right"></i>
-              </button>
-              <button
+              </a>
+              <a
                 class="about_me_action_btns projects_btn"
                 data-i18n="projects_btn"
+                href="#projects_id"
               >
                 PROJEKTY <i class="fa-solid fa-chevron-right"></i>
-              </button>
+              </a>
               <br />
-              <button
+              <a
                 class="about_me_action_btns contact_btn"
                 data-i18n="contact_btn"
+                href="#contact_id"
               >
                 <i class="fa-solid fa-message"></i>
                 NAPSAT ZPRÁVU
-              </button>
+              </a>
             </div>
           </section>
         </div>
@@ -138,9 +172,107 @@
       </div>
     </div>
 
+    <div class="about_me_container_desktop">
+      <section class="about_me_section_container">
+        <div class="about_me_section_txt">
+          <h1>LUKÁŠ HOMOLA</h1>
+          <p>
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >REACT</span
+            >
+            ·
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >TYPESCRIPT</span
+            >
+            ·
+            <span style="font-family: var(--font-chivo); color: var(--text-500)"
+              >NODE</span
+            >
+          </p>
+          <p>
+            Jsem juniorní vývojář se zaměřením na React. Vývoj webových aplikací
+            je mou vášní a věnuji se mu ve volném čase. Pracuji s Reactem,
+            TypeScriptem a Node.js a neustále rozšiřuji své dovednosti.
+          </p>
+        </div>
+        <div class="about_me_section_icons">
+          <img
+            src="./src/assets/avatar/small.png"
+            alt="small_portrait_img"
+            class="small_portrait_img"
+          />
+          <a
+            href="https://github.com/LukesHomola"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <span id="my_number_btn"
+            ><i class="fa-solid fa-phone"></i> +420 770 175 790</span
+          >
+        </div>
+      </section>
+
+      <div class="avatar_section_container_desktop">
+        <div class="about_me_action_container_desktop">
+          <section>
+            <span style="font-size: var(--fs-h1)"
+              ><i class="fa-solid fa-circle-info"></i>
+            </span>
+            <br />
+            <br />
+            <section>
+              <h3 style="font-weight: 600 !important">RYCHLÁ AKCE</h3>
+              <p>Důležité informace k dispozici, na jednom místě.</p>
+            </section>
+          </section>
+
+          <section class="about_me_action_btns_outer_container_desktop">
+            <div class="about_me_action_btns_container_desktop">
+              <a
+                class="about_me_action_btns_desktop techstack_btn"
+                data-i18n="tech_stack_btn"
+                href="#techstack_id"
+              >
+                TECH STACK
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <a
+                class="about_me_action_btns_desktop projects_btn"
+                data-i18n="projects_btn"
+                href="#projects_id"
+              >
+                PROJEKTY <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <br />
+              <a
+                class="about_me_action_btns_desktop contact_btn"
+                data-i18n="contact_btn"
+                href="#contact_id"
+              >
+                <i class="fa-solid fa-message"></i>
+                NAPSAT ZPRÁVU
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="avatar_img_wrapper_desktop">
+          <section>
+            <img
+              src="/src/assets/avatar/placeholder_avatar_transparent.png"
+              alt=""
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+
     <br />
 
-    <div class="my_projects">
+    <div class="my_projects" id="projects_id">
       <div class="my_projects_inner_container">
         <section class="my_projects_title">
           <p class="my_projects_title_tag">Nedávné</p>
@@ -364,7 +496,7 @@
 
     <br />
 
-    <div class="my_experience">
+    <div class="my_experience" id="experience_id">
       <div class="my_experience_inner_container"></div>
       <section class="my_experience_title">
         <p class="my_experience_title_tag">Pracovní</p>
@@ -490,7 +622,7 @@
 
     <br />
 
-    <div class="my_studies">
+    <div class="my_studies" id="studies_id">
       <div class="my_studies_inner_container"></div>
       <section class="my_studies_title">
         <p class="my_studies_title_tag">Absolvované</p>
@@ -576,7 +708,7 @@
 
     <br />
 
-    <div class="my_techstack">
+    <div class="my_techstack" id="techstack_id">
       <div class="my_techstack_inner_container"></div>
       <section class="my_techstack_title">
         <p class="my_techstack_title_tag">Můj</p>
@@ -785,7 +917,7 @@
 
     <br />
 
-    <div class="my_contact">
+    <div class="my_contact" id="contact_id">
       <div class="my_contact_inner_container"></div>
       <section class="my_contact_title">
         <p class="my_contact_title_tag">Mé</p>
@@ -831,8 +963,7 @@
             </section>
             <br />
           </div>
-
-          <div class="my_contact_card">
+          <div class="my_contact_card" id="downloads_id">
             <section class="my_contact_card_title_container">
               <section class="my_contact_card_title_text_container">
                 <i class="fa-solid fa-file"></i>

@@ -22,6 +22,10 @@
   --bg-200: #383838;
   --bg-100: #3e3e3e; /* still very dark but usable for contrast */
 
+  --bg-800-09: rgb(20, 20, 20, 0.9);
+  --bg-800-07: rgb(20, 20, 20, 0.7);
+  --bg-800-05: rgb(20, 20, 20, 0.5);
+
   /* Primary (light red) */
   --primary-100: #fceaea; /* darker very light */
   --primary-200: #f4b6b6; /* darker light */
@@ -74,4 +78,6 @@
   --accent2-700: #2a4a78;
   --accent2-800: #21385d;
   --accent2-900: #192944;
+
+  --accent2-600-02: rgb(52, 92, 148, 0.2);
 }
