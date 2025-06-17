@@ -141,7 +141,8 @@
   background-color: var(--accent2-600-02);
 }
 .contact_btn i {
-  color: var(--accent-600);
+  padding-right: 0.5rem;
+  color: var(--primary-600);
 }
 
 /* IMG */
@@ -158,6 +159,7 @@
 .my_projects {
   padding: 1rem;
 }
+
 .my_projects_title_tag {
   width: fit-content;
   color: var(--text-800) !important;
@@ -168,6 +170,7 @@
 
 .my_projects_inner_container {
   padding: 1rem;
+  padding-top: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: var(--bg-800);
 }
@@ -336,6 +339,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+/* Disable large card ver. */
+.my_experience_card_container_large {
+  display: none;
 }
 .my_experience_card {
   position: relative;
@@ -614,6 +621,9 @@
   gap: 1rem;
 }
 .my_techstack_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   position: relative;
   min-height: 10rem;
   border-radius: 5px;
@@ -625,6 +635,7 @@
 .my_techstack_card * {
   padding: 0.2rem;
 }
+
 .my_techstack_card_inner_content_container {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -667,14 +678,12 @@
 }
 
 .my_techstack_card_content_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 50px);
-  grid-auto-rows: auto;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+}
+.my_techstack_card_content_container img {
+  max-width: 50px;
 }
 
-.my_techstack_card_content_container section img,
 .my_techstack_card_content_detailed_container section img {
   width: 100%;
 }
@@ -968,15 +977,17 @@
   }
   .about_me_container_desktop {
     display: block !important;
-    height: 70svh;
     background-image: url("../assets/backgrounds/svg_backgrounds/Sprinkle.svg");
+    padding-bottom: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
   /* ABOUT ME SECTION */
-  .about_me_section_container {
+  .about_me_section_container_desktop {
     padding: 1rem;
     padding-bottom: 2rem;
     background-color: var(--bg-900);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
   /* ABOUT ME SECTION CONTAINER */
@@ -1069,6 +1080,7 @@
     color: white;
     font-weight: normal;
     transition: all 0.3s ease;
+    padding: 0.25rem 0.8rem;
     box-shadow: 0 0 10px var(--accent2-600-02);
     background-color: var(--accent2-600-02);
   }
@@ -1090,6 +1102,17 @@
     transition: filter 0.3s ease;
     filter: brightness(80%);
   }
+  /* PROJECTS */
+
+  .my_projects_card_img_content_container img {
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.my_projectsSwiper_desktop {
+  display: none;
 }
 
 /* DESKTOP */
@@ -1099,10 +1122,324 @@
   .about_me_container_desktop {
     display: block !important;
     height: auto;
-    background-image: url("../assets/backgrounds/svg_backgrounds/Sprinkle.svg");
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .about_me_section_container_desktop {
+    position: relative;
+    padding: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%);
+    background-color: var(--bg-900);
   }
 
   .about_me_section_txt p {
-    max-width: 40%;
+    max-width: 60%;
+  }
+  /* QUICK ACTIONS SECTION */
+  .avatar_section_container_desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .about_me_action_outer_container_desktop {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  .about_me_action_container_desktop {
+    width: 80%;
+    padding: 2rem;
+  }
+  .about_me_action_container_desktop section {
+    max-width: 80%;
+    padding-bottom: 1rem;
+  }
+
+  /* RIGHT - AKA. IMG SECTION */
+  .avatar_img_outer_wrapper_desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .avatar_img_wrapper_desktop {
+    width: 50%;
+    background: none;
+  }
+  .avatar_img_wrapper_desktop img {
+    width: 400px;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    filter: drop-shadow(10px 10px 4px var(--bg-600));
+  }
+  /* PROJECTS */
+  .my_projects {
+    display: none;
+  }
+  .my_projectsSwiper_desktop {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .my_projectsSwiper_desktop:hover {
+    cursor: pointer;
+  }
+  .my_projectsSwiper_title_container_desktop {
+    padding-left: 4rem;
+  }
+
+  /* SPLIDE SLIDER DEFAULT RULES */
+  .slider_img {
+    max-width: 100%;
+  }
+  .my_innerSwiper_desktop img {
+    max-width: 100%;
+  }
+  .my_innerSwiper_desktop,
+  .my_innerSwiper_desktop .splide__track,
+  .my_innerSwiper_desktop .splide__list {
+    width: 100%;
+  }
+  .my_project_images_desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .my_project_images_desktop img {
+    height: auto;
+    display: block;
+  }
+
+  .my_innerSwiper_ticket {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  /*  */
+  /* Project outer container */
+  .my_project_slide_desktop {
+    display: flex;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--bg-800-07);
+  }
+
+  /* Project inner container */
+  .my_project_content_desktop {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+  }
+  /* Project desc. container */
+  .my_project_description_desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--bg-900);
+  }
+  .my_project_description_name_desktop {
+    /*     flex: 0 0 20%;
+ */
+  }
+  .my_project_description_name_desktop p {
+    font-size: var(--fs-caption);
+    color: var(--text-600);
+  }
+
+  .my_project_description_content_desktop {
+    /*     flex: 0 0 50%;
+ */
+    line-height: 2rem;
+    font-size: var(--fs-small);
+  }
+
+  .my_project_description_tags_desktop section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .my_project_description_tags_desktop section span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: var(--text-800) !important;
+    font-family: var(--font-chivo);
+    font-size: var(--fs-caption);
+  }
+
+  .project_tag_main {
+    background-color: var(--primary-600);
+  }
+  .project_tag_sec {
+    background-color: var(--secondary-800);
+  }
+  .project_tag_third {
+    background-color: var(--accent-900);
+  }
+
+  .my_project_description_project_btn_desktop {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .my_project_description_project_btn_desktop button {
+    font-weight: normal;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--accent-900);
+  }
+
+  /* PAGINATION AND NAVIGATION SLIDER */
+  .splide__pagination__page:hover {
+    opacity: 1;
+  }
+
+  .splide__pagination__page.is-active {
+    background-color: var(--primary-600) !important;
+    opacity: 1;
+  }
+
+  .my_projectsSwiper_desktop .splide__pagination__page {
+    background-color: #555;
+  }
+
+  .splide__arrow {
+    background: rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease;
+    z-index: 10;
+    background-color: var(--primary-700-o5) !important;
+    opacity: 1 !important;
+  }
+
+  .splide__arrow {
+    display: none !important;
+  }
+  .splide__arrow:hover {
+    background-color: var(--primary-600) !important;
+  }
+
+  .my_projectsSwiper_desktop:hover .splide__arrows_outer .splide__arrow {
+    display: block !important;
+    transition: background 0.3s ease;
+  }
+  .my_project_images_desktop:hover .splide__arrows_inner .splide__arrow {
+    display: block !important;
+    transition: background 0.3s ease;
+  }
+  .splide__arrow {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .my_projectsSwiper_desktop:hover .splide__arrows_outer .splide__arrow,
+  .my_project_images_desktop:hover .splide__arrows_inner .splide__arrow {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .splide__arrow:hover {
+    background-color: var(--primary-600) !important;
+  }
+  /*  */
+  .my_experience,
+  .my_studies,
+  .my_techstack,
+  .my_contact {
+    padding: 2rem;
+  }
+  /* EXPERIENCE */
+  /* Disable small card ver. */
+  .my_experience_card_container_small {
+    display: none !important;
+  }
+  /* Enable large card ver. */
+  .my_experience_card_container_large {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my_experience {
+    padding: 0;
+  }
+  .my_experience_title {
+    padding-left: 2rem;
+  }
+
+  .my_experience_card_wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5% 0 5% 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--bg-700);
+  }
+
+  .my_experience_card_wrapper:nth-of-type(even) {
+    grid-template-columns: 1fr 0.5fr;
+    border-radius: 0 5% 0 5%;
+    background-color: var(--bg-800);
+  }
+  .my_experience_card_wrapper:nth-of-type(even) .my_experience_card {
+    background-color: var(--bg-700);
+  }
+
+  .my_experience_card {
+    height: fit-content;
+    max-width: 80%;
+  }
+  .my_experience_card_text_content_container {
+    padding-bottom: 5%;
+  }
+
+  .my_experience_card_gif {
+    min-width: 500px;
+  }
+
+  /* STUDIES */
+  .my_studies_card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  /* TECH STACK */
+  .my_techstack_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+  }
+  .my_techstack_card_title_container {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .my_techstack_card_title_container {
+    height: fit-content;
+  }
+
+  .my_innerSwiper_desktop .splide__track {
+    overflow-x: hidden;
   }
 }
