@@ -176,3 +176,6 @@ details[open] a {
     max-width: 1.3rem;
   }
 }
+.nav-link.active {
+  color: var(--primary-600);
+}

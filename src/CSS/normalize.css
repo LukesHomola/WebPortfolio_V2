@@ -11,6 +11,10 @@
   color: var(--text-900);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;

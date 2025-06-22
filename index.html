@@ -30,6 +30,13 @@
 
     <!-- Splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+
+    <!-- AOS animations -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body class="body_index">
     <header>
@@ -50,16 +57,33 @@
             </div>
 
             <section class="header_btns">
-              <li><a href="/" data-i18n="about_me">O MNĚ</a></li>
               <li>
-                <a href="#projects_id" data-i18n="my_projects">PROJEKTY</a>
+                <a href="#about_me_id" data-i18n="about_me" class="nav-link"
+                  >O MNĚ</a
+                >
               </li>
               <li>
-                <a href="#techstack_id" data-i18n="my_techstack">TECH STACK</a>
+                <a href="#projects_id" data-i18n="my_projects" class="nav-link"
+                  >PROJEKTY</a
+                >
               </li>
-              <li><a href="#contact_id" data-i18n="contact">KONTAKT</a></li>
               <li>
-                <a href="#downloads_id" data-i18n="downloads">KE STAŽENÍ</a>
+                <a
+                  href="#techstack_id"
+                  data-i18n="my_techstack"
+                  class="nav-link"
+                  >TECH STACK</a
+                >
+              </li>
+              <li>
+                <a href="#contact_id" data-i18n="contact" class="nav-link"
+                  >KONTAKT</a
+                >
+              </li>
+              <li>
+                <a href="#downloads_id" data-i18n="downloads" class="nav-link"
+                  >KE STAŽENÍ</a
+                >
               </li>
             </section>
             <section class="header_btns_bottom">
@@ -69,13 +93,26 @@
           </div>
         </details>
 
-        <section class="header_content_desktop">
+        <section class="header_content_desktop" data-aos="slide-left">
           <section class="header_btns">
-            <a href="/" data-i18n="about_me">O MNĚ</a>
-            <a href="#projects_id" data-i18n="my_projects">PROJEKTY</a>
-            <a href="#techstack_id" data-i18n="my_techstack">TECH STACK</a>
-            <a href="#contact_id" data-i18n="contact">KONTAKT</a>
-            <a href="#downloads_id" data-i18n="downloads">KE STAŽENÍ</a>
+            <a href="#about_me_id_des" class="nav-link" data-i18n="about_me"
+              >O MNĚ</a
+            >
+            <a
+              href="#my_projectsSwiper_desktop"
+              class="nav-link"
+              data-i18n="my_projects"
+              >PROJEKTY</a
+            >
+            <a href="#techstack_id" class="nav-link" data-i18n="my_techstack"
+              >TECH STACK</a
+            >
+            <a href="#contact_id" class="nav-link" data-i18n="contact"
+              >KONTAKT</a
+            >
+            <a href="#downloads_id " class="nav-link" data-i18n="downloads"
+              >KE STAŽENÍ</a
+            >
             <br />
             <div class="header_language_switcher_desktop">
               <a href="#"
@@ -88,9 +125,9 @@
         </section>
       </nav>
     </header>
-    <div class="about_me_container">
-      <section class="about_me_section_container">
-        <div class="about_me_section_txt">
+    <div class="about_me_container section" id="about_me_id">
+      <section class="about_me_section_container" data-aos="fade-right">
+        <div class="about_me_section_txt" data-aos="slide-right">
           <h1>LUKÁŠ HOMOLA</h1>
           <p>
             <span style="font-family: var(--font-chivo); color: var(--text-500)"
@@ -180,9 +217,9 @@
       </div>
     </div>
 
-    <div class="about_me_container_desktop">
-      <section class="about_me_section_container_desktop">
-        <div class="about_me_section_txt">
+    <div class="about_me_container_desktop section" id="about_me_id_des">
+      <section class="about_me_section_container_desktop" data-aos="fade-right">
+        <div class="about_me_section_txt" data-aos="slide-right">
           <h1>LUKÁŠ HOMOLA</h1>
           <p>
             <span style="font-family: var(--font-chivo); color: var(--text-500)"
@@ -226,7 +263,7 @@
       <br />
       <div class="avatar_section_container_desktop">
         <div class="about_me_action_outer_container_desktop">
-          <div class="about_me_action_container_desktop">
+          <div class="about_me_action_container_desktop" data-aos="fade-right">
             <section>
               <span style="font-size: var(--fs-h1)"
                 ><i class="fa-solid fa-circle-info"></i>
@@ -270,7 +307,7 @@
           </div>
         </div>
 
-        <div class="avatar_img_outer_wrapper_desktop">
+        <div class="avatar_img_outer_wrapper_desktop" data-aos="fade-left">
           <div class="avatar_img_wrapper_desktop">
             <section>
               <img
@@ -287,7 +324,7 @@
     <br />
     <br />
 
-    <div class="my_projects" id="projects_id">
+    <div class="my_projects section" id="projects_id" data-aos="fade-up">
       <div class="my_projects_inner_container">
         <section class="my_projects_title">
           <p class="my_projects_title_tag">Nedávné</p>
@@ -513,10 +550,14 @@
 
     <!-- DESKTOP PROJECT SHOW -->
     <div
+      class="splide my_projectsSwiper_desktop section"
       id="my_projectsSwiper_desktop"
-      class="splide my_projectsSwiper_desktop"
+      data-aos="fade-up"
     >
-      <section class="my_projectsSwiper_title_container_desktop">
+      <section
+        class="my_projectsSwiper_title_container_desktop"
+        data-aos="fade-up"
+      >
         <p class="my_projects_title_tag">Nedávné</p>
         <h3 style="line-height: 0.5rem; padding-bottom: 1rem">PROJEKTY</h3>
       </section>
@@ -707,8 +748,8 @@
     <br />
     <br />
 
-    <div class="my_experience" id="experience_id">
-      <section class="my_experience_title">
+    <div class="my_experience section" id="experience_id">
+      <section class="my_experience_title" data-aos="fade-up">
         <p class="my_experience_title_tag">Pracovní</p>
         <h3 style="line-height: 0.5rem; padding-bottom: 1rem">ZKUŠENOSTI</h3>
       </section>
@@ -833,7 +874,7 @@
       <div
         class="my_experience_card_container my_experience_card_container_large"
       >
-        <div class="my_experience_card_wrapper">
+        <div class="my_experience_card_wrapper" data-aos="fade-left">
           <img
             class="my_experience_card_gif"
             src="/src/assets/experience_gifs/networking.gif"
@@ -882,7 +923,7 @@
           </div>
         </div>
 
-        <div class="my_experience_card_wrapper">
+        <div class="my_experience_card_wrapper" data-aos="fade-right">
           <div class="my_experience_card">
             <section>
               <section class="my_experience_card_title_container">
@@ -929,7 +970,7 @@
           />
         </div>
 
-        <div class="my_experience_card_wrapper">
+        <div class="my_experience_card_wrapper" data-aos="fade-left">
           <img
             class="my_experience_card_gif"
             src="/src/assets/experience_gifs/kfc.gif"
@@ -981,7 +1022,7 @@
 
     <br />
 
-    <div class="my_studies" id="studies_id">
+    <div class="my_studies section" id="studies_id" data-aos="fade-up">
       <section class="my_studies_title">
         <p class="my_studies_title_tag">Absolvované</p>
         <h3 style="line-height: 0.5rem; padding-bottom: 1rem">VZDĚLÁNÍ</h3>
@@ -1065,7 +1106,7 @@
 
     <br />
 
-    <div class="my_techstack" id="techstack_id">
+    <div class="my_techstack section" id="techstack_id" data-aos="fade-up">
       <div class="my_techstack_inner_container"></div>
       <section class="my_techstack_title">
         <p class="my_techstack_title_tag">Můj</p>
@@ -1252,89 +1293,109 @@
 
     <br />
 
-    <div class="my_contact" id="contact_id">
+    <div class="my_contact section" id="contact_id">
       <div class="my_contact_inner_container"></div>
-      <section class="my_contact_title">
+      <section class="my_contact_title" data-aos="fade-up">
         <p class="my_contact_title_tag">Mé</p>
         <h3 style="line-height: 0.5rem; padding-bottom: 1rem">KONTAKTY</h3>
-        <div class="my_contact_card_container">
-          <div class="my_contact_card">
-            <section class="my_contact_card_title_container">
-              <section class="my_contact_card_title_text_container">
-                <i class="fa-solid fa-address-book"></i>
-                <h4>OBECNÉ KONTAKTY</h4>
-              </section>
-
-              <section class="my_contact_card_subtitle_container">
-                <p>Dostupné kontakty a dokumenty.</p>
-              </section>
-            </section>
-
-            <section class="my_contact_card_text_content_container">
-              <section style="display: flex; padding-bottom: 0.5rem">
-                <h5><i class="fa-solid fa-location-dot"></i></h5>
-                <p>Otmarov 91, 664 57</p>
-              </section>
-              <section style="display: flex">
-                <h5><i class="fa-solid fa-phone"></i></h5>
-                <p>+420 770 175 790</p>
-              </section>
-              <section style="display: flex">
-                <h5><i class="fa-solid fa-envelope"></i></h5>
-                <p>lukas-homola@seznam.cz</p>
-              </section>
-              <section style="display: flex">
-                <h5><i class="fa-brands fa-github"></i></h5>
-                <p class="my_contact_card_github_link">
-                  <a
-                    href="https://github.com/LukesHomola"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    /LukesHomola
-                  </a>
-                </p>
-              </section>
-            </section>
-            <br />
-          </div>
-          <div class="my_contact_card" id="downloads_id">
-            <section class="my_contact_card_title_container">
-              <section class="my_contact_card_title_text_container">
-                <i class="fa-solid fa-file"></i>
-                <h4>KE STAŽENÍ</h4>
-              </section>
-
-              <section class="my_contact_card_subtitle_container">
-                <p>Dostupné kontakty a dokumenty.</p>
-              </section>
-            </section>
-
-            <section class="my_contact_card_text_content_container_docum">
-              <section class="my_contact_card_text_content_button">
-                <p>Stáhnout</p>
-                <button class="my_contact_card_text_content_container_section">
-                  <h5><i class="fa-solid fa-download"></i></h5>
-                  <section>
-                    <h5>ČESKÉ CV</h5>
-                  </section>
-                </button>
-              </section>
-
-              <section class="my_contact_card_text_content_button">
-                <p>Stáhnout</p>
-                <button class="my_contact_card_text_content_container_section">
-                  <h5><i class="fa-solid fa-download"></i></h5>
-                  <section>
-                    <h5>ANGLICKÉ CV</h5>
-                  </section>
-                </button>
-              </section>
-            </section>
-            <br />
-          </div>
-        </div>
       </section>
+
+      <div class="my_contact_card_container">
+        <div class="my_contact_card" data-aos="fade-right">
+          <section class="my_contact_card_title_container">
+            <section class="my_contact_card_title_text_container">
+              <i class="fa-solid fa-address-book"></i>
+              <h4>OBECNÉ KONTAKTY</h4>
+            </section>
+
+            <section class="my_contact_card_subtitle_container">
+              <p>Dostupné kontakty a dokumenty.</p>
+            </section>
+          </section>
+
+          <section class="my_contact_card_text_content_container">
+            <section style="display: flex; padding-bottom: 0.5rem">
+              <h5><i class="fa-solid fa-location-dot"></i></h5>
+              <p>Otmarov 91, 664 57</p>
+            </section>
+            <section style="display: flex">
+              <h5><i class="fa-solid fa-phone"></i></h5>
+              <p>+420 770 175 790</p>
+            </section>
+            <section style="display: flex">
+              <h5><i class="fa-solid fa-envelope"></i></h5>
+              <p>lukas-homola@seznam.cz</p>
+            </section>
+            <section style="display: flex">
+              <h5><i class="fa-brands fa-github"></i></h5>
+              <p class="my_contact_card_github_link">
+                <a
+                  href="https://github.com/LukesHomola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  /LukesHomola
+                </a>
+              </p>
+            </section>
+          </section>
+          <br />
+        </div>
+        <br />
+        <div class="my_contact_card" id="downloads_id" data-aos="fade-left">
+          <section class="my_contact_card_title_container">
+            <section class="my_contact_card_title_text_container">
+              <i class="fa-solid fa-file"></i>
+              <h4>KE STAŽENÍ</h4>
+            </section>
+
+            <section class="my_contact_card_subtitle_container">
+              <p>Dostupné kontakty a dokumenty.</p>
+            </section>
+          </section>
+
+          <section class="my_contact_card_text_content_container_docum">
+            <section class="my_contact_card_text_content_button">
+              <p>Stáhnout</p>
+              <a
+                href="/src/assets/cv/Resume_Homola_CZ.pdf"
+                class="my_contact_card_text_content_container_section"
+                download
+              >
+                <h5>
+                  <img
+                    src="./src/assets/language/english_icon.svg"
+                    alt="czech_language_icon"
+                  />
+                </h5>
+                <section>
+                  <h5>ČESKÉ CV</h5>
+                </section>
+              </a>
+            </section>
+
+            <section class="my_contact_card_text_content_button">
+              <p>Stáhnout</p>
+              <a
+                href="/src/assets/cv/Resume_Homola_EN.pdf"
+                class="my_contact_card_text_content_container_section"
+                download
+              >
+                <h5>
+                  <img
+                    src="./src/assets/language/czech_icon.svg"
+                    alt="czech_language_icon"
+                  />
+                </h5>
+                <section>
+                  <h5>ANGLICKÉ CV</h5>
+                </section>
+              </a>
+            </section>
+          </section>
+          <br />
+        </div>
+      </div>
     </div>
 
     <br />
@@ -1378,6 +1439,42 @@
             passive: false,
           });
         });
+      });
+    </script>
+    <!-- NAV ACTIVE -->
+    <script>
+      const sections = document.querySelectorAll(".section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              navLinks.forEach((link) => {
+                link.classList.toggle(
+                  "active",
+                  link.getAttribute("href") === "#" + id
+                );
+              });
+            }
+          });
+        },
+        {
+          threshold: 0.3,
+          rootMargin: "-50px 0px -50px 0px", // top, right, bottom, left
+        }
+      );
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+
+    <script>
+      AOS.init({
+        duration: 800, // trvání v ms
+        once: false, // animace jen jednou
       });
     </script>
   </body>
