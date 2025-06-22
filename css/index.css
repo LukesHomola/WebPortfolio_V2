@@ -996,7 +996,7 @@
   }
   .about_me_container_desktop {
     display: block !important;
-    background-image: url("../assets/backgrounds/svg_backgrounds/Sprinkle.svg");
+    background-image: url("/assets/backgrounds/svg_backgrounds/sprinkle.svg");
     padding-bottom: 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
@@ -1487,4 +1487,13 @@
 :root {
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
+}
+.about_me_container_desktop,
+.my_projects,
+.my_projectsSwiper_desktop,
+.my_experience,
+.my_studies,
+.my_techstack,
+.my_contact {
+  overflow-x: hidden !important;
 }
