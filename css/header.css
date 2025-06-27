@@ -115,6 +115,11 @@ details[open] a {
 }
 .header_language_switcher_mobile img {
   max-width: 2rem;
+  opacity: 50%;
+}
+
+.header_language_switcher_mobile img:hover {
+  cursor: not-allowed;
 }
 
 /* REMOVE DESKTOP NAV FOR MOBILE */
@@ -174,6 +179,10 @@ details[open] a {
   }
   .header_language_switcher_desktop img {
     max-width: 1.3rem;
+    opacity: 50%;
+  }
+  .header_language_switcher_desktop img:hover {
+    cursor: not-allowed;
   }
 }
 .nav-link.active {

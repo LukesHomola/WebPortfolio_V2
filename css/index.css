@@ -620,6 +620,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .my_techstack_card {
   display: flex;
   flex-direction: column;
@@ -680,6 +681,7 @@
 
 .my_techstack_card_content_container {
   display: flex;
+  flex-wrap: wrap;
 }
 .my_techstack_card_content_container img {
   max-width: 50px;
